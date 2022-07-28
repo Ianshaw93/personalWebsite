@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Home from "./components/Home";
 import NavComponent from "./components/Navbar";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 		<div className="App">
 			{/* <TabComponent/> */}
 			<NavComponent />
+			<Home />
 			{/* <BodyComponent/> */}
 			{/* <FooterComponent/> */}
 		</div>

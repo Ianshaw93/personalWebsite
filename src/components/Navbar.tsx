@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
-
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
+import { Link } from 'react-scroll';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
 // type BurgerProps = {
 // 	handleClick: (event: React.MouseEvent) => boolean;
 // }
@@ -13,7 +15,7 @@ export default function NavComponent() {
 
 	return (
 		<>
-			<div className="navbar bg-base lg">
+			<div className="fixed w-full h-[80px] flex justify-between items-center px-4">
 				<div className="flex-1">
 					<a className="btn btn-ghost normal-case text-xl" href="#home">
 						Ian Shaw
@@ -22,13 +24,20 @@ export default function NavComponent() {
 				</div>
 				{/* menu hidden mobile, visible big screen */}
 				<div className='hidden md:flex'> 
-					<div className="navbar-end">
+					{/* <div className="navbar-end">*/}
 						<ul className="menu menu-horizontal p-0">
+						{/* <ul className="hidden md:flex"> */}
 							<li>
-								<a href="#link">Home</a>
+								<Link to='home' smooth={true} duration={500}>
+									Home
+								</Link>
+								{/* <a href="#link">Home</a> */}
 							</li>
 							<li>
-								<a href="#link">Portfolio</a>
+								<Link to='portfolio' smooth={true} duration={500}>
+									Portfolio
+								</Link>
+								{/* <a href="#link">Portfolio</a> */}
 							</li>
 							<li>
 								<a href="#link">Blog</a>
@@ -39,7 +48,7 @@ export default function NavComponent() {
 							<a className="btn">Contact</a>
 						</ul>
 						
-					</div>
+					{/* </div> */}
 				</div>
 				{/* Burger Menu */}
 				{/* <div className='md:hidden' onClick={props.handleClick}> */}
@@ -67,12 +76,32 @@ export default function NavComponent() {
 				</ul>
 
 				{/* Social Icons */}
-				<div className='flex fixed flex-col tip-[35%] left-0'>
+				<div className='hidden md:flex fixed flex-col top-[35%] left-0'>
 					<ul>
-						<li>
-							<a href="/">
-								<FaLinkedin />
-								<FaGithub />
+						<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
+							<a className='pl-8 flex justify-between items-center w-full' 
+							href="/">
+								LinkedIn<FaLinkedin size={30}/>
+							</a>
+						</li>
+						<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
+							<a className='pl-8 flex justify-between items-center w-full' href="/">
+								GitHub <FaGithub size={30}/>
+							</a>
+						</li>
+						{/* <li className='w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
+							<a className='pl-8 flex justify-between items-center w-full' href="/">
+								Medium<FaMedium size={30}/>
+							</a>
+						</li> */}
+						<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
+							<a className='pl-8 flex justify-between items-center w-full' href="/">
+								Email <HiOutlineMail size={30}/>
+							</a>
+						</li>
+						<li className='w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
+							<a className='pl-8 flex justify-between items-center w-full' href="/">
+								Resume<BsFillPersonLinesFill size={30}/>
 							</a>
 						</li>
 					</ul>
