@@ -6,14 +6,18 @@ const Home = () => {
     <div name='home' className='w-full h-screen'>
         {/* Container */}
         <div className='max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full'>
-          <p>Hey there, my name is</p>
-          <h1>Ian Shaw</h1>
-          <h2>Full Stack Developer</h2>
-          <p>I'm a full stack developer with commercial experience in web and mobile applications.</p>
+          <p className='text-[#40AAE8]'>Hey there, my name is</p>
+          <h1 className='text-4xl sm:text-7xl font-bold'>Ian Shaw</h1>
+          {/* change font colour to lighter */}
+          <h2 className='text-4xl sm:text-7xl font-bold text-[#CBD0D3]'>Full Stack Developer</h2>
+          <p className='py-4 max-w-[700px]'>I'm an agile full stack developer who upskills very quickly with commercial experience in a breadth of technology across web and mobile applications.</p>
+          <div>
+          <button className='text-black hover:text-[#CBD0D3] border-2 px-6 my-2 flex items-center hover:bg-[#438EBA]'>
+            View Work  <HiArrowNarrowRight />
+          </button>
         </div>
-        <div>
-          <button>View Work <></></button>
         </div>
+
     </div>
   )
 }

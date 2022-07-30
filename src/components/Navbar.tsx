@@ -15,9 +15,9 @@ export default function NavComponent() {
 
 	return (
 		<>
-			<div className="fixed w-full h-[80px] flex justify-between items-center px-4">
+			<div className="fixed w-full h-[80px] flex justify-between items-center px-4 ">
 				<div className="flex-1">
-					<a className="btn btn-ghost normal-case text-xl" href="#home">
+					<a className="text-[#40AAE8] btn btn-ghost normal-case text-xl" href="#home">
 						Ian Shaw
 						<img src="" className="nav--logo" />
 					</a>
@@ -57,7 +57,7 @@ export default function NavComponent() {
 				</div>
 				{/* mobile menu - burger content */}
 				{/* to do add bg colour - same as nav bar colour */}
-				<ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen b flex flex-col justify-center items-center '} >
+				<ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen b flex flex-col justify-center items-center bg-[#CBD0D3]'} >
 					<li className='py-6 text-4xl'>
 						<a href="#link">Home</a>
 					</li>
@@ -76,7 +76,7 @@ export default function NavComponent() {
 				</ul>
 
 				{/* Social Icons */}
-				<div className='hidden md:flex fixed flex-col top-[35%] left-0'>
+				<div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
 					<ul>
 						<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
 							<a className='pl-8 flex justify-between items-center w-full' 
