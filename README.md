@@ -2,5 +2,5 @@
 
 Personal portfolio created with Typescript React and Tailwind CSS.
 
-![image](https://user-images.githubusercontent.com/76686112/181944995-80370500-3017-4408-bbe7-b84a0020c5b2.png)
+![image](https://user-images.githubusercontent.com/76686112/181945320-24e06f9c-51ff-4b8c-8cc6-465ef88ee0fc.png)
 
