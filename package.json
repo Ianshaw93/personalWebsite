@@ -1,14 +1,21 @@
 {
-  "name": "@cryptogrid/landing_page",
+  "homepage": "https://Ianshaw93.github.io/personalWebsite",
+  "name": "personalWebsite",
   "private": true,
   "version": "0.0.1",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d run",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-scroll": "^1.8.4",
     "daisyui": "^2.14.3",
+    "gh": "^2.8.9",
+    "gh-pages": "^4.0.0",
+    "pages": "^0.0.16",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-icons": "^4.4.0",

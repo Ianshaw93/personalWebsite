@@ -5,7 +5,8 @@ import EasyBanc from '../assets/easyBancSquare.png'
 //src\assets\easyBancSquare.PNG
 const Work = () => {
   return (
-    <div name='work' className='w-full md:h-screen'>
+    // <div name='work' className='w-full md:h-screen'>
+    <div className='w-full md:h-screen'>
         <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             <div>
                 <p className='text-4xl font-bold inline border-b-4 border-[#40AAE8]'>Work</p>
