@@ -1,5 +1,5 @@
 import React from 'react'
-import AirBnbImg from '../assets/cryptoPriceAlertsSquare.png'
+import cryptoAppChart from '../assets/cryptoPriceAlertsSquare.png'
 import EasyBanc from '../assets/easyBancSquare.png'
 //src\assets\airbnbLogo.jpeg
 //src\assets\easyBancSquare.PNG
@@ -16,7 +16,7 @@ const Work = () => {
 {/* TODO: change to dynamically add projects - perhaps auto pull from github pinned? */}
             <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
                 <div 
-                style={{ backgroundImage: `url(${AirBnbImg})` }}
+                style={{ backgroundImage: `url(${cryptoAppChart})` }}
                 className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
                 >
                     {/* Hover Effects */}
@@ -25,11 +25,11 @@ const Work = () => {
 Crypto Price Alerts Mobile App
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href='/'>
+                            <a href='https://github.com/Ianshaw93/cryptoAlertsApp'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white '>Demo</button>  
                             </a>
                             {/* <br/> */}
-                            <a href='/'>
+                            <a href='https://github.com/Ianshaw93/cryptoAlertsApp'>
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white '>Code</button>  
                             </a>
                         </div>
