@@ -3,7 +3,7 @@ import headshot from '../assets/gradballSquare.jpg'
 
 const About = () => {
   return (
-    <div className='w-full h-screen'>
+    <div id={'about'} className='w-full h-screen'>
     {/* <div name='about' className='w-full h-screen'> */}
         <div className='flex flex-col justify-center items-center w-full h-full'>
             <div className='max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8'>

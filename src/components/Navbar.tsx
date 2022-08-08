@@ -3,6 +3,7 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa'
 import { Link } from 'react-scroll';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import CvPdf from '../assets/cv.pdf'
 // type BurgerProps = {
 // 	handleClick: (event: React.MouseEvent) => boolean;
 // }
@@ -28,24 +29,25 @@ export default function NavComponent() {
 						<ul className="menu menu-horizontal p-0">
 						{/* <ul className="hidden md:flex"> */}
 							<li>
-								<Link to='home' smooth={true} duration={500}>
+								<Link to='#home' smooth={true} duration={500}>
 									Home
 								</Link>
 								{/* <a href="#link">Home</a> */}
 							</li>
 							<li>
-								<Link to='portfolio' smooth={true} duration={500}>
+								<Link to='#work' smooth={true} duration={500}>
 									Portfolio
 								</Link>
 								{/* <a href="#link">Portfolio</a> */}
 							</li>
 							<li>
-								<a href="#link">Blog</a>
+								<a href="#articles">Articles</a>
 							</li>
 							<li>
-								<a href="#link">CV</a>
+								{/* <a href="#link">CV</a> */}
+								<a href = {CvPdf} target = "_blank">CV</a>
 							</li>
-							<a className="btn">Contact</a>
+							{/* <a className="btn">Contact</a> */}
 						</ul>
 						
 					{/* </div> */}
@@ -80,12 +82,12 @@ export default function NavComponent() {
 					<ul>
 						<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
 							<a className='pl-8 flex justify-between items-center w-full' 
-							href="/">
+							href="https://www.linkedin.com/in/ianshaw93/">
 								LinkedIn<FaLinkedin size={30}/>
 							</a>
 						</li>
 						<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
-							<a className='pl-8 flex justify-between items-center w-full' href="/">
+							<a className='pl-8 flex justify-between items-center w-full' href="https://github.com/Ianshaw93/">
 								GitHub <FaGithub size={30}/>
 							</a>
 						</li>
@@ -95,15 +97,15 @@ export default function NavComponent() {
 							</a>
 						</li> */}
 						<li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
-							<a className='pl-8 flex justify-between items-center w-full' href="/">
+							<a className='pl-8 flex justify-between items-center w-full' href="mailto:ianshaw93@gmail.com">
 								Email <HiOutlineMail size={30}/>
 							</a>
 						</li>
-						<li className='w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
+						{/* <li className='w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300'>
 							<a className='pl-8 flex justify-between items-center w-full' href="/">
 								Resume<BsFillPersonLinesFill size={30}/>
 							</a>
-						</li>
+						</li> */}
 					</ul>
 				</div>
 			</div>
