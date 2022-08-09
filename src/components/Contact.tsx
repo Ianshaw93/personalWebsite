@@ -1,8 +1,8 @@
 import React from 'react'
-import { useHistory } from 'react-dom';
+// import { useHistory } from 'react-dom';
 
 const Contact = () => {
-    const history = useHistory();
+    // const history = useHistory();
 
     return (
         // <div name='contact' className='w-full h-screen bg-[#CBD0D3] flex justify-center items-center p-4'>
@@ -18,7 +18,7 @@ const Contact = () => {
                 <textarea className='bg-[#ccd6f6] p-2' name="message" rows={10} placeholder='Message'></textarea>
                 <a href="mailto:ianshaw93@gmail.com">
                     <button
-                        onClick={()=> history.push("/work")} 
+                        // onClick={()=> history.push("/work")} 
                         className='text-[#393E41] border-2 hover:bg-[#40AAE8] hover:border-[#40AAE8] hover:text-white px-4 py-3 my-8 mx-auto flex items-center'
                         >
                             Let's Collaborate
