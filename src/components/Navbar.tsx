@@ -47,6 +47,9 @@ export default function NavComponent() {
 								{/* <a href="#link">CV</a> */}
 								<a href = {CvPdf} target = "_blank">CV</a>
 							</li>
+							<li>
+								<a href="#contact">Contact</a>
+							</li>
 							{/* <a className="btn">Contact</a> */}
 						</ul>
 						
@@ -59,21 +62,23 @@ export default function NavComponent() {
 				</div>
 				{/* mobile menu - burger content */}
 				{/* to do add bg colour - same as nav bar colour */}
-				<ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen b flex flex-col justify-center items-center bg-[#CBD0D3]'} >
+				<ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen b flex flex-col justify-center items-center bg-[#CBD0D3]'} 
+				onClick={handleClick}
+				>
 					<li className='py-6 text-4xl'>
-						<a href="#link">Home</a>
+						<a href="#home">Home</a>
 					</li>
 					<li className='py-6 text-4xl'>
-						<a href="#link">Portfolio</a>
+						<a href="#work">Portfolio</a>
 					</li>
 					<li className='py-6 text-4xl'>
-						<a href="#link">Blog</a>
+						<a href="#articles">Articles</a>
 					</li>
 					<li className='py-6 text-4xl'>
-						<a href="#link">CV</a>
+						<a href = {CvPdf} target = "_blank">CV</a>
 					</li>
 					<li className='py-6 text-4xl'>
-						<a href="#link">Contact</a>
+						<a href="#contact">Contact</a>
 					</li>
 				</ul>
 
