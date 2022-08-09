@@ -29,16 +29,16 @@ export default function NavComponent() {
 						<ul className="menu menu-horizontal p-0">
 						{/* <ul className="hidden md:flex"> */}
 							<li>
-								<Link to='#home' smooth={true} duration={500}>
+								{/* <Link to='#home' smooth={true} duration={500}>
 									Home
-								</Link>
-								{/* <a href="#link">Home</a> */}
+								</Link> */}
+								<a href="#home">Home</a>
 							</li>
 							<li>
-								<Link to='#work' smooth={true} duration={500}>
+								{/* <Link to='#work' smooth={true} duration={500}>
 									Portfolio
-								</Link>
-								{/* <a href="#link">Portfolio</a> */}
+								</Link> */}
+								<a href="#work">Portfolio</a>
 							</li>
 							<li>
 								<a href="#articles">Articles</a>

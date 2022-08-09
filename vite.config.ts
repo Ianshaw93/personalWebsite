@@ -7,6 +7,8 @@ export default defineConfig({
   base: '/personalWebsite/',
   plugins: [react()],
   build: {
+    // emptyOutputDir: false,
 	  target: "esnext",
+    
   }
 })
